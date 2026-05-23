@@ -1,0 +1,21 @@
+{
+  "class_map": {
+    "Caries": 0,
+    "Gingivitas": 1
+  },
+  "idx_to_class": {
+    "0": "Caries",
+    "1": "Gingivitas"
+  },
+  "img_size": [
+    224,
+    224
+  ],
+  "best_threshold": 0.1,
+  "preprocessing": "tensorflow.keras.applications.mobilenet_v2.preprocess_input",
+  "model_base": "MobileNetV2",
+  "seed": 42,
+  "unfreeze_last": 30,
+  "test_accuracy": 1.0,
+  "test_auc": 1.0
+}
