@@ -1,7 +1,13 @@
 streamlit
 tensorflow==2.15.0
 mlflow
-tensorflow-cpu
+# tensorflow-cpu
 pillow
 numpy
 huggingface_hub
+numpy==1.26.4
+opencv-python-headless
+scikit-learn
+matplotlib
+seaborn
+h5py
