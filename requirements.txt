@@ -1,9 +1,7 @@
 streamlit==1.32.2
-tensorflow==2.15.0
-numpy==1.26.4
+tf-nightly
+numpy
 pillow
 opencv-python-headless
 scikit-learn
-matplotlib
-seaborn
 h5py
