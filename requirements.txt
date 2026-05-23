@@ -1,7 +1,7 @@
-streamlit==1.32.2
-tf-nightly
-numpy
+streamlit
+tensorflow
+mlflow
+tensorflow-cpu
 pillow
-opencv-python-headless
-scikit-learn
-h5py
+numpy
+huggingface_hub
