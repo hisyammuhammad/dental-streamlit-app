@@ -20,7 +20,8 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 from PIL import Image
-
+import tensorflow as tf
+from tensorflow import keras
 # ═════════════════════════════════════════════════════════════════
 # KONFIGURASI
 # ═════════════════════════════════════════════════════════════════
@@ -75,10 +76,7 @@ def load_model_and_meta():
         )
         st.stop()
 
-    model = tf.keras.models.load_model(
-        str(MODEL_PATH),
-        compile=False,   # tidak perlu compile untuk inference
-    )
+    model = keras.models.load_model("models/dental_mobilenetv2_final.keras")
 
     idx_to_class = {int(k): v for k, v in meta["idx_to_class"].items()}
     threshold    = float(meta.get("best_threshold", 0.5))
