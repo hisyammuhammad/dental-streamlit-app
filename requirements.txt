@@ -1,7 +1,12 @@
 # Streamlit Cloud — Dental Classifier
 # Pakai tensorflow-cpu agar lebih ringan (Cloud tidak punya GPU)
 streamlit>=1.32.0
-tensorflow-cpu==2.17.0
-pillow>=10.0.0
-numpy>=1.24.0
-pandas>=2.0.0
+tensorflow==2.16.1
+keras==3.3.3
+numpy<2
+pillow
+opencv-python-headless
+h5py
+scikit-learn
+matplotlib
+pandas
